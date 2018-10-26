@@ -18,11 +18,8 @@ const displayCart = history => {
     }
   };
 
-  const addItem = (id, quantity) => {
-    display.items.push({
-      id,
-      quantity,
-    });
+  const addItem = item => {
+    display.items.push(item);
   };
 
   const parseHistory = record => {
@@ -36,7 +33,11 @@ const displayCart = history => {
     if (item) {
       updateItem(item, modifier);
     } else {
-      addItem(record.item.id, modifier);
+      addItem({
+        id: record.item.id,
+        quantity: modifier,
+        price,
+      });
     }
 
     display.total += price * modifier;
