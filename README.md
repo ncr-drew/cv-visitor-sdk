@@ -38,6 +38,5 @@ To access the database service, pass in a configurations object to the Database 
 const db = new Database({
   appKey: '8a808f29602bec9c01621f44543c023b',
   nepUnit: '5514f8f260a047aaaa2f68524d748c97',
-  org: 'vision-store',
 });
 ```
