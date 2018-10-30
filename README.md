@@ -4,16 +4,10 @@ This is a sdk for accessing the CV store database, as well as functions for form
 
 ## Install
 
-First, add the `CXD` npm registry to your `npmrc` file if you haven't already.
+Install via npm
 
 ```
-npm config set @cxd:registry http://nexuspro.ncr.com/nexus/content/repositories/cxd-npm
-```
-
-Then install the sdk, along with the peer dependency `isomorphic-unfetch`.
-
-```
-npm i @cxd/cv-node-sdk isomorphic-unfetch
+npm i @ncr/cv-visitor-sdk
 ```
 
 ## Usage
@@ -21,13 +15,13 @@ npm i @cxd/cv-node-sdk isomorphic-unfetch
 Import the sdk into your js file
 
 ```
-import cvNodeSDK from '@cxd/cv-node-sdk';
+import cvVisitorSDK from '@ncr/cv-visitor-sdk';
 ```
 
 or individual functions
 
 ```
-import { Database } from '@cxd/cv-node-sdk';
+import { Database } from '@ncr/cv-visitor-sdk';
 ```
 
 ## Init database access

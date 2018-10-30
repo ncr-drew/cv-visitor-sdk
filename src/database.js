@@ -54,9 +54,7 @@ class Database {
   fetchVisitors(date) {
     if (!date) return;
 
-    return fetchJson(`${this.url}/visitor/visitors/find?dateFrom=${date}`).then(
-      data => data,
-    );
+    return fetchJson(`${this.url}/getVisitors`).then(data => data);
   }
 }
 
