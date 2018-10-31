@@ -51,9 +51,7 @@ class Database {
       });
   }
 
-  fetchVisitors(date) {
-    if (!date) return;
-
+  fetchVisitors() {
     return fetchJson(`${this.url}/getVisitors`).then(data => data);
   }
 }
