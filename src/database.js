@@ -15,11 +15,15 @@ class Database {
   }
 
   fetchVisitors() {
-    return fetchJson(`${this.url}/getVisitors`).then(data => data);
+    return fetchJson(`${this.url}/getVisitors`);
   }
 
   fetchCurrentVisitor() {
     return this.fetchVisitors().then(data => data.sort(sortByDate)[0]);
+  }
+
+  fetchStats() {
+    return fetchJson(`${this.url}/getAnalytics`);
   }
 }
 
