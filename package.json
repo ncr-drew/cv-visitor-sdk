@@ -1,6 +1,6 @@
 {
   "name": "@ncr/cv-visitor-sdk",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "CV Node.js SDK",
   "main": "dist/index.js",
   "scripts": {
