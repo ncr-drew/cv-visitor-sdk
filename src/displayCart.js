@@ -1,5 +1,7 @@
 import prices from './prices';
 
+const capitalize = string => string.charAt(0).toUpperCase() + string.slice(1);
+
 const displayCart = history => {
   const display = {
     total: 0,
@@ -29,12 +31,17 @@ const displayCart = history => {
       record.state === 'AddItem' ? 1 : record.state === 'RemoveItem' ? -1 : 0;
     const item = display.items.find(item => item.id === record.item.id);
     const price = prices[record.item.id];
+    const name = record.item.id
+      .split('_')
+      .map(s => capitalize(s))
+      .join(' ');
 
     if (item) {
       updateItem(item, modifier);
     } else {
       addItem({
         id: record.item.id,
+        name,
         quantity: modifier,
         price,
       });
