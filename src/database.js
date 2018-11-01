@@ -19,7 +19,7 @@ class Database {
   }
 
   fetchCurrentVisitor() {
-    return this.fetchVisitors().then(data => data.sort(sortByDate)[0]);
+    return this.fetchVisitors().then(data => data && data.sort(sortByDate)[0]);
   }
 
   fetchStats() {
