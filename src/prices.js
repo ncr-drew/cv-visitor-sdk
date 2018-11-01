@@ -35,7 +35,7 @@ export default {
   oreos: 0.99,
   parfait: 0.99,
   person: 0.99,
-  popcorn: 0.99,
+  popcorn: 4.45,
   powerade_blue: 0.99,
   powerade_red: 0.99,
   powerade_yellow: 0.99,
