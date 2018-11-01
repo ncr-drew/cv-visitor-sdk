@@ -47,7 +47,7 @@ const displayCart = history => {
       });
     }
 
-    display.total += price * modifier;
+    display.total += parseFloat(price * modifier);
   };
 
   history.forEach(parseHistory);
