@@ -25,6 +25,22 @@ class Database {
   fetchStats() {
     return fetchJson(`${this.url}/getAnalytics`);
   }
+
+  fetchLowInventory() {
+    return fetchJson(`${this.url}/getLowInventory`);
+  }
+
+  fetchCart(id) {
+    return fetchJson(`${this.url}/getCart?id=${id}`);
+  }
+
+  fetchItemsReturned() {
+    return fetchJson(`${this.url}/getItemsReturned`);
+  }
+
+  fetchPromotions() {
+    return fetchJson(`${this.url}/getPromotions`);
+  }
 }
 
 export default Database;

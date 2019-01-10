@@ -1,6 +1,6 @@
 {
   "name": "@ncr/cv-visitor-sdk",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "CV Node.js SDK",
   "main": "dist/index.js",
   "scripts": {
@@ -14,13 +14,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/cli": "^7.1.2",
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
     "del-cli": "^1.1.0",
-    "rollup": "^0.66.6",
-    "rollup-plugin-babel": "^4.0.3",
-    "rollup-plugin-terser": "^3.0.0"
+    "rollup": "^1.1.0",
+    "rollup-plugin-babel": "^4.3.0",
+    "rollup-plugin-terser": "^4.0.2"
   },
   "peerDependencies": {
     "isomorphic-unfetch": "^3.0.0"
