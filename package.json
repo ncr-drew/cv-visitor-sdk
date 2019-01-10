@@ -1,6 +1,6 @@
 {
   "name": "@ncr/cv-visitor-sdk",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "CV Node.js SDK",
   "main": "dist/index.js",
   "scripts": {
@@ -9,10 +9,7 @@
     "dist": "npm run clean && npm run build",
     "prepare": "npm run dist"
   },
-  "files": [
-    "dist/",
-    "src/"
-  ],
+  "files": ["dist/", "src/"],
   "keywords": [],
   "author": "",
   "license": "ISC",
